@@ -5,11 +5,11 @@
  * Simple commands to toggle learning mode on/off
  */
 
-const { codeMasterBrain } = require('./code-master-integration');
+const { brainInitializer } = require('./brain-initializer');
 
 class LearningModeCLI {
   constructor() {
-    this.brain = codeMasterBrain;
+    this.brainInitializer = brainInitializer;
   }
 
   async run() {
@@ -29,13 +29,13 @@ class LearningModeCLI {
 
   async turnOnLearningMode() {
     console.log('🚀 ACTIVATING LEARNING MODE');
-    console.log('════════════════════════════════════════');
+    console.log('══════════════════════════════════════');
     
-    await this.brain.initialize();
-    const result = this.brain.toggleLearningMode(true);
+    const brain = await this.brainInitializer.getBrain();
+    const result = brain.toggleLearningMode(true);
     
     console.log('✅ LEARNING MODE IS NOW ACTIVE');
-    console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+    console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
     console.log('🎯 What happens now:');
     console.log('   • 90% of tasks delegated to specialized agents');
     console.log('   • Claude AI, GitHub Copilot, Gemini Analyzer');
@@ -58,13 +58,13 @@ class LearningModeCLI {
 
   async turnOffLearningMode() {
     console.log('🧠 DEACTIVATING LEARNING MODE');
-    console.log('════════════════════════════════════════');
+    console.log('══════════════════════════════════════');
     
-    await this.brain.initialize();
-    const result = this.brain.toggleLearningMode(false);
+    const brain = await this.brainInitializer.getBrain();
+    const result = brain.toggleLearningMode(false);
     
     console.log('✅ RETURNING TO NORMAL OPERATION');
-    console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+    console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
     console.log('🎯 What happens now:');
     console.log('   • I solve problems directly with brain enhancement');
     console.log('   • Strategic delegation to agents when needed');
@@ -82,10 +82,10 @@ class LearningModeCLI {
 
   async showStatus() {
     console.log('📊 LEARNING MODE STATUS');
-    console.log('════════════════════════════════════════');
+    console.log('══════════════════════════════════════');
     
-    await this.brain.initialize();
-    const status = await this.brain.getStatus();
+    const brain = await this.brainInitializer.getBrain();
+    const status = await brain.getStatus();
     
     console.log(`🎯 Mode: ${status.learningMode ? 'LEARNING MODE' : 'NORMAL MODE'}`);
     console.log(`🧠 Brain Status: ${status.status}`);
@@ -111,7 +111,7 @@ class LearningModeCLI {
 
   showHelp() {
     console.log('🧠 Learning Mode CLI');
-    console.log('════════════════════════════════════════');
+    console.log('══════════════════════════════════════════');
     console.log('');
     console.log('Usage:');
     console.log('  node learning-cli.js "learn mode on"   - Activate learning mode');
@@ -121,12 +121,12 @@ class LearningModeCLI {
     console.log('Learning Mode:');
     console.log('  • 90% delegation to Claude AI, GitHub Copilot, Gemini');
     console.log('  • I focus on learning and brain updates');
-    console('  • Your work gets done faster while I learn');
+    console.log('  • Your work gets done faster while I learn');
     console.log('');
     console.log('Normal Mode:');
     console.log('  • I solve problems directly with brain enhancement');
-    console.log('  • Strategic delegation when needed');
-    console.log('  • Apply all learned knowledge');
+    console.log('  • Strategic delegation to agents when needed');
+    console.log('  • Apply all learned knowledge from learning phase');
   }
 }
 
