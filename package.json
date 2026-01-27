@@ -1,0 +1,45 @@
+{
+  "name": "ai-brain",
+  "version": "1.0.0",
+  "description": "AI Brain - Global knowledge base and skill system for AI agents",
+  "main": "install/ai-brain-loader.js",
+  "bin": {
+    "ai-brain": "./install/ai-brain-cli.js"
+  },
+  "scripts": {
+    "install": "node install/setup.js",
+    "load": "node install/ai-brain-loader.js",
+    "test": "node install/test.js",
+    "status": "node install/status.js"
+  },
+  "keywords": [
+    "ai",
+    "brain",
+    "knowledge",
+    "skills",
+    "agent"
+  ],
+  "author": "Code Master AI",
+  "license": "MIT",
+  "dependencies": {
+    "fs-extra": "^11.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alfirusahmad/ai-brain.git"
+  },
+  "files": [
+    "install/",
+    "skills/",
+    "README.md"
+  ],
+  "ai-brain": {
+    "version": "1.0.0",
+    "skillsPath": "./skills",
+    "autoLoad": true,
+    "contextAware": true
+  }
+}
