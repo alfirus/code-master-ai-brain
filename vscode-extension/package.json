@@ -1,0 +1,136 @@
+{
+  "name": "codingmaster",
+  "displayName": "CodingMaster - AI Task Delegation",
+  "description": "Delegate coding tasks to multiple AI models directly from VS Code",
+  "version": "2.0.0",
+  "publisher": "CodingMaster",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "AI",
+    "Developer Tools",
+    "Productivity"
+  ],
+  "keywords": [
+    "ai",
+    "coding",
+    "gpt",
+    "claude",
+    "gemini",
+    "task-delegation",
+    "multi-agent"
+  ],
+  "activationEvents": [
+    "onCommand:codingmaster.delegateTask",
+    "onCommand:codingmaster.showDashboard",
+    "onCommand:codingmaster.selectModel",
+    "onCommand:codingmaster.viewHistory"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "codingmaster.delegateTask",
+        "title": "CodingMaster: Delegate Task",
+        "description": "Delegate a task to AI models"
+      },
+      {
+        "command": "codingmaster.showDashboard",
+        "title": "CodingMaster: Show Dashboard",
+        "description": "Open CodingMaster dashboard"
+      },
+      {
+        "command": "codingmaster.selectModel",
+        "title": "CodingMaster: Select Model",
+        "description": "Select preferred AI model"
+      },
+      {
+        "command": "codingmaster.viewHistory",
+        "title": "CodingMaster: View History",
+        "description": "View task execution history"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "codingmaster.delegateTask",
+        "key": "ctrl+shift+d",
+        "mac": "cmd+shift+d",
+        "when": "editorTextFocus"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "codingmaster.delegateTask",
+          "group": "1_modification",
+          "when": "editorTextFocus"
+        }
+      ],
+      "commandPalette": [
+        {
+          "command": "codingmaster.delegateTask"
+        },
+        {
+          "command": "codingmaster.showDashboard"
+        },
+        {
+          "command": "codingmaster.selectModel"
+        },
+        {
+          "command": "codingmaster.viewHistory"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "CodingMaster",
+      "properties": {
+        "codingmaster.apiKey": {
+          "type": "string",
+          "description": "OpenAI API Key",
+          "markdownDescription": "Your OpenAI API key. Get one at https://platform.openai.com/api-keys"
+        },
+        "codingmaster.defaultModel": {
+          "type": "string",
+          "enum": [
+            "gpt-4-turbo",
+            "gpt-4o",
+            "gpt-3.5-turbo",
+            "claude-3-opus",
+            "gemini-pro"
+          ],
+          "default": "gpt-4o",
+          "description": "Default AI model to use"
+        },
+        "codingmaster.autoSaveResults": {
+          "type": "boolean",
+          "default": true,
+          "description": "Automatically save task results"
+        },
+        "codingmaster.showNotifications": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show notifications for task completion"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.70.0",
+    "@types/node": "^16.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alfirus/codingmaster-vscode"
+  },
+  "bugs": {
+    "url": "https://github.com/alfirus/codingmaster-vscode/issues"
+  },
+  "homepage": "https://github.com/alfirus/codingmaster-vscode#readme"
+}

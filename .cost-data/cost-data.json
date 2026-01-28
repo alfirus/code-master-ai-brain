@@ -1,0 +1,109 @@
+{
+  "executions": [
+    {
+      "timestamp": "2026-01-28T19:28:12.444Z",
+      "agentId": "gpt-4-turbo",
+      "platform": "openai",
+      "taskType": "backend",
+      "tokensUsed": 500,
+      "cost": 0.01,
+      "executionTime": 2000,
+      "quality": 0.9,
+      "success": true
+    },
+    {
+      "timestamp": "2026-01-28T19:28:12.444Z",
+      "agentId": "gpt-4o",
+      "platform": "openai",
+      "taskType": "frontend",
+      "tokensUsed": 400,
+      "cost": 0.005,
+      "executionTime": 1500,
+      "quality": 0.85,
+      "success": true
+    },
+    {
+      "timestamp": "2026-01-28T19:28:12.444Z",
+      "agentId": "claude-3-opus",
+      "platform": "anthropic",
+      "taskType": "backend",
+      "tokensUsed": 600,
+      "cost": 0.015,
+      "executionTime": 2500,
+      "quality": 0.95,
+      "success": true
+    },
+    {
+      "timestamp": "2026-01-28T19:28:12.444Z",
+      "agentId": "gpt-3.5-turbo",
+      "platform": "openai",
+      "taskType": "frontend",
+      "tokensUsed": 200,
+      "cost": 0.001,
+      "executionTime": 1000,
+      "quality": 0.6,
+      "success": true
+    }
+  ],
+  "totalCost": 0.031,
+  "totalTokens": 1700,
+  "byAgent": {
+    "gpt-4-turbo": {
+      "executions": 1,
+      "totalCost": 0.01,
+      "totalTokens": 500,
+      "avgCost": 0.01,
+      "avgTokens": 500,
+      "avgTime": 2000
+    },
+    "gpt-4o": {
+      "executions": 1,
+      "totalCost": 0.005,
+      "totalTokens": 400,
+      "avgCost": 0.005,
+      "avgTokens": 400,
+      "avgTime": 1500
+    },
+    "claude-3-opus": {
+      "executions": 1,
+      "totalCost": 0.015,
+      "totalTokens": 600,
+      "avgCost": 0.015,
+      "avgTokens": 600,
+      "avgTime": 2500
+    },
+    "gpt-3.5-turbo": {
+      "executions": 1,
+      "totalCost": 0.001,
+      "totalTokens": 200,
+      "avgCost": 0.001,
+      "avgTokens": 200,
+      "avgTime": 1000
+    }
+  },
+  "byPlatform": {
+    "openai": {
+      "executions": 3,
+      "totalCost": 0.016,
+      "avgCost": 0.005333333333333333
+    },
+    "anthropic": {
+      "executions": 1,
+      "totalCost": 0.015,
+      "avgCost": 0.015
+    }
+  },
+  "byTaskType": {
+    "backend": {
+      "executions": 2,
+      "totalCost": 0.025,
+      "avgCost": 0.0125
+    },
+    "frontend": {
+      "executions": 2,
+      "totalCost": 0.006,
+      "avgCost": 0.003
+    }
+  },
+  "lastUpdated": "2026-01-28T19:28:12.444Z"
+}
