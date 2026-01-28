@@ -248,3 +248,13 @@ This rule ensures:
 - 📋 **Progress Tracking** - Clear visibility into task progress
 
 **Remember**: This workflow is MANDATORY for ALL user tasks. No exceptions.
+---
+
+## 🧹 CLEANUP RULE (MANDATORY)
+
+**Always remove temporary files after task completion**
+
+Temporary files: documentation summaries, test files, temporary scripts, backup files
+Do NOT remove: source code, project configs, permanent documentation, user-requested files
+
+Include cleanup in completion summary. Ask user if unsure.
