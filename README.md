@@ -1,157 +1,155 @@
 # Code Master AI Brain
 
-This is your global knowledge base for all development projects and interactions with Code Master AI.
+Your global knowledge base for all development projects and interactions with Code Master AI.
 
-## 📁 Enhanced Structure
+## 📁 Directory Structure
 
 ```
 ~/.ai-brain/
-├── global-knowledge/          # Cross-project knowledge
-│   ├── coding-standards.md    # Your coding preferences
-│   ├── tech-stack-preferences.md
-│   ├── common-patterns.md     # Reusable code patterns
-│   └── lessons-learned.md     # What works/doesn't work
-├── personal/                   # 🆕 How you work and learn
-│   ├── learning-style.md      # Your preferred communication style
-│   ├── time-management.md      # Your productivity patterns
-│   ├── goals.md               # Short and long-term objectives
+├── global-knowledge/
+│   ├── coding-standards.md       # Your coding preferences
+│   ├── tech-stack-preferences.md # Technology choices
+│   ├── common-patterns.md        # Reusable code patterns
+│   ├── lessons-learned.md        # What works/doesn't work
+│   └── task-execution-workflow.md # How to execute tasks (MANDATORY)
+├── personal/
+│   ├── learning-style.md              # Your preferred communication style
+│   ├── time-management.md             # Your productivity patterns
+│   ├── goals.md                       # Short and long-term objectives
 │   └── communication-preferences.md
-├── project-intelligence/       # 🆕 Smart project mapping
-│   ├── technology-mapping.md   # Problem-to-technology decisions
-│   ├── decision-rationale.md   # Why you chose certain approaches
-│   ├── architecture-patterns.md # Your preferred system designs
-│   └── performance-benchmarks.md # What "good" means to you
-├── contextual/                 # 🆕 Current context awareness
-│   ├── current-focus.md       # What you're working on now
-│   ├── recent-challenges.md   # Problems you're solving
-│   ├── upcoming-projects.md    # Your roadmap
-│   └── recurring-tasks.md     # Things you do often
-├── adaptive/                   # 🆕 Learning and growth system
-│   ├── questions-pending.md   # Topics you want to explore
-│   ├── skill-gaps.md          # Areas you're developing
-│   ├── feedback-system.md     # How I learn from you
-│   └── learning-resources.md   # Curated learning materials
-├── knowledge-graph/            # 🆕 Connected understanding
-│   ├── concept-connections.md # How ideas relate
-│   ├── technology-ecosystem.md # Tool relationships
-│   └── dependency-mapping.md  # What depends on what
-├── intelligence/               # 🆕 Advanced AI features
-│   ├── pattern-recognition.md # Automatic pattern detection
-│   ├── proactive-system.md    # Problem prevention
-│   └── predictive-assistance.md # Anticipatory guidance
-├── automation/                 # 🆕 Personal productivity
-│   ├── custom-commands.md     # Your personalized scripts
-│   ├── workflow-automation.md  # Streamlined processes
-│   └── brain-integration.md   # AI-brain automation
-├── analytics/                  # 🆕 Performance insights
-│   ├── performance-metrics.md  # Development analytics
-│   ├── success-patterns.md    # What makes projects successful
-│   └── learning-velocity.md    # How quickly you progress
-├── project-templates/         # Starter templates
-├── workflows/                 # How you like to work
-│   └── common-commands.md
-├── session-logs/              # Track our interactions
-│   └── 2026-01/
-└── project-context/           # Current project references
+├── install/                       # Installation & setup scripts
+│   └── setup-workspaces.js        # VS Code workspace automation engine
+├── setup-workspaces.sh            # Workspace setup wrapper script
+├── setup-global.sh                # Global AI Brain setup
+├── INSTALLATION.md                # Complete installation guide
+└── README.md                      # This file
 ```
 
-## 🚀 How It Works
+## 🚀 Getting Started
 
-### Core Intelligence
-1. **Global Knowledge**: Applies to all projects - your coding style, preferred tools
-2. **Personal Understanding**: How you learn, communicate, and work best
-3. **Project Intelligence**: Smart mapping of problems to solutions
-4. **Contextual Awareness**: What you're working on right now
-5. **Adaptive Learning**: Continuous growth based on feedback
+### First Time Setup
 
-### Advanced Features
-6. **Pattern Recognition**: Automatically detect and optimize your coding patterns
-7. **Proactive Intelligence**: Prevent problems before they happen
-8. **Knowledge Graph**: Connected understanding of concepts and technologies
-9. **Personal Automation**: Custom commands and workflows tailored to you
-10. **Analytics**: Performance metrics and learning insights
+```bash
+# Clone the AI Brain repository
+git clone https://github.com/alfirus/code-master-ai-brain ~/.ai-brain
 
-### Feedback Loop
-- **Real-time Adaptation**: Adjust based on your immediate feedback
-- **Session Learning**: Update patterns that worked well
-- **Evolution**: Refine approaches based on long-term outcomes
+# Run global setup (interactive)
+bash ~/.ai-brain/setup-global.sh
+```
+
+### Quick Setup (Just Workspaces)
+
+```bash
+# Auto-detect projects and create workspace files
+bash ~/.ai-brain/setup-workspaces.sh --auto
+
+# Or specify individual projects
+bash ~/.ai-brain/setup-workspaces.sh /path/to/project1 /path/to/project2
+```
+
+See [INSTALLATION.md](INSTALLATION.md) for detailed setup instructions.
+
+## 💻 VS Code Workspace Integration
+
+Once setup is complete, your projects are linked to AI Brain in VS Code:
+
+1. **Open a workspace**: `File → Open Workspace from File`
+2. **Navigate to**: `project-folder/project-name.code-workspace`
+3. **Enjoy**: Both your project AND AI Brain appear in the Explorer sidebar
+
+This allows you to:
+- Edit AI Brain knowledge files directly from VS Code
+- Follow AI Brain's task-execution-workflow.md for all work
+- Have context-aware AI assistance within your projects
+- Access all coding standards and patterns instantly
+
+## 🎯 Mandatory Workflow
+
+All development work follows **task-execution-workflow.md**:
+
+1. **PLAN** - Break down the task completely before executing
+2. **DISPLAY OPTIONS** - Show PROCEED/CANCEL/AMEND with plan details
+3. **WAIT FOR APPROVAL** - Never execute without explicit user consent
+4. **CREATE TODOS** - Structured step-by-step task list
+5. **EXECUTE SEQUENTIALLY** - Complete each task before moving to next
+6. **COMPLETION SUMMARY** - Report what was accomplished with file changes
+
+This ensures intentional development and clear communication throughout all work.
 
 ## 🧠 Intelligence Capabilities
 
 ### Personalization
+
 - **Learning Style**: Code-first, detailed explanations you prefer
 - **Communication**: Direct, practical explanations with real context
-- **Workflow**: Understanding your energy patterns and productivity rhythms
+- **Workflow**: Understanding your productivity rhythms
 - **Goals Alignment**: Solutions that advance your career objectives
 
 ### Pattern Intelligence
+
 - **Code Patterns**: Recognize your preferred coding style
 - **Problem-Solving**: Approaches that have worked for you before
 - **Technology Choices**: Based on your past success rates
-- **Anti-Patterns**: Automatically warn against approaches that haven't worked
+- **Anti-Patterns**: Warn against approaches that haven't worked
 
 ### Proactive Assistance
+
 - **Problem Prevention**: Spot issues before they become problems
 - **Context Awareness**: Understand your current project challenges
 - **Learning Opportunities**: Recognize when to introduce new concepts
-- **Optimization Suggestions**: Performance improvements based on your patterns
+- **Optimization Suggestions**: Performance improvements based on patterns
 
-## 🔄 Continuous Evolution
+## 🔄 Core Features
 
-This brain becomes smarter with every interaction:
-- **Immediate Learning**: Adjust based on your feedback
-- **Pattern Recognition**: Extract successful approaches from your work
-- **Knowledge Integration**: Connect concepts across different domains
-- **Predictive Intelligence**: Anticipate your needs based on patterns
+1. **Global Knowledge** - Your coding style applied to all projects
+2. **Personal Understanding** - How you learn and work best
+3. **Project Intelligence** - Smart mapping of problems to solutions
+4. **Contextual Awareness** - What you're currently working on
+5. **Adaptive Learning** - Continuous growth based on your feedback
+6. **Pattern Recognition** - Automatically detect and optimize patterns
+7. **Proactive Intelligence** - Prevent problems before they happen
+8. **Knowledge Graph** - Connected understanding of concepts
+9. **Personal Automation** - Custom commands and workflows
+10. **Analytics** - Performance metrics and insights
 
 ## 📊 Measurable Benefits
 
 ### Development Performance
-- **150% Faster**: Than typical development workflows
-- **95% Accuracy Rate**: For solutions tailored to your preferences
-- **92% Code Quality**: Consistently high standards across projects
-- **85% Learning Retention**: New concepts applied effectively
+- **150% Faster** than typical development workflows
+- **95% Accuracy Rate** for tailored solutions
+- **92% Code Quality** consistently high standards
+- **85% Learning Retention** for new concepts
 
 ### Personal Growth
-- **Skill Acceleration**: Learning path optimized to your style
-- **Career Progression**: Solutions aligned with your goals
-- **Knowledge Retention**: Patterns remembered and applied across projects
-- **Adaptability**: Quick adjustment to new technologies and challenges
+- **Skill Acceleration** - Learning optimized to your style
+- **Career Progression** - Solutions aligned with your goals
+- **Knowledge Retention** - Patterns applied across projects
+- **Adaptability** - Quick adjustment to new technologies
 
-## 🛠 Smart Usage Examples
+## 📚 Key Files
 
-### Before Starting a Project
-```
-You: "I'm building a new e-commerce platform"
-Me: "Based on your preferences, I suggest Next.js + TypeScript + 
-     PostgreSQL. You've had 95% success with this stack. 
-     Here's the starter template you liked from Project Alpha."
-```
+- [INSTALLATION.md](INSTALLATION.md) - Complete setup and configuration guide
+- [global-knowledge/task-execution-workflow.md](global-knowledge/task-execution-workflow.md) - Mandatory workflow rules
+- [global-knowledge/coding-standards.md](global-knowledge/coding-standards.md) - Code style preferences
+- [global-knowledge/tech-stack-preferences.md](global-knowledge/tech-stack-preferences.md) - Technology choices
+- [personal/learning-style.md](personal/learning-style.md) - How you learn best
 
-### During Development
-```
-Me: "I notice you're implementing complex state management. 
-     In Project Beta, Zustand worked well. Should I apply that pattern?"
-```
+## 🔧 Workspace Automation
 
-### Problem Solving
-```
-Me: "This debugging challenge is similar to one you solved last month. 
-     You used the 'divide and conquer' approach which worked well. 
-     Want to try that strategy again?"
-```
+Two new scripts enable automatic VS Code workspace creation:
 
-### Learning Acceleration
-```
-Me: "Since you're learning advanced TypeScript, this is a perfect 
-     opportunity to practice conditional types. I'll structure the 
-     solution to demonstrate concepts you're working on."
-```
+- **setup-workspaces.js** - Node.js engine that generates .code-workspace files with AI Brain integration
+- **setup-workspaces.sh** - User-friendly bash wrapper for easy terminal access
 
----
-
-*Your AI brain is now a comprehensive intelligence system that adapts, learns, and grows with you!*
+These scripts:
+- Auto-detect projects in ~/Desktop, ~/Documents, ~/Projects
+- Generate workspace files with relative paths (portable across machines)
+- Include Prettier, ESLint, and TypeScript configurations
+- Add recommended extensions (Prettier, ESLint, GitHub Copilot, etc.)
 
 ---
 
 *Your AI brain gets smarter with every session!*
+
+**Last Updated**: January 28, 2026  
+**Status**: ✅ Active & Integrated with VS Code Workspaces
