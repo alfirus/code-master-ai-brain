@@ -258,3 +258,14 @@ Temporary files: documentation summaries, test files, temporary scripts, backup 
 Do NOT remove: source code, project configs, permanent documentation, user-requested files
 
 Include cleanup in completion summary. Ask user if unsure.
+
+### Temporary File Location
+
+**IMPORTANT: Always create temporary files in `~/.ai-brain/temp/`**
+
+Examples:
+- Summary documents: `~/.ai-brain/temp/summary.md`
+- Test scripts: `~/.ai-brain/temp/test-script.sh`
+- Backup files: `~/.ai-brain/temp/backup.bak`
+
+This keeps the workspace and AI brain clean. The temp folder is git-ignored.
