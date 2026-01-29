@@ -1,0 +1,24 @@
+{
+  "name": "AI Brain",
+  "version": "1.0.0",
+  "description": "Self-improving AI knowledge base - installable knowledge, rules, personas, and skills",
+  "lastUpdated": "2026-01-29",
+  "author": "AI Brain Contributors",
+  "license": "MIT",
+  "stats": {
+    "knowledgeFiles": 0,
+    "rules": 1,
+    "personas": 1,
+    "skills": 0,
+    "memories": 0,
+    "pendingContributions": 0
+  },
+  "compatibility": {
+    "minVersion": "1.0.0",
+    "aiAgents": ["claude", "gpt", "gemini", "llama", "custom"]
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}
