@@ -6,7 +6,9 @@ A self-improving AI knowledge base that AI agents can install and update.
 
 **For AI Agents:** Read `install.md` to install this brain.
 
-**For Humans:** This repository contains structured knowledge, rules, personas, and skills that AI agents can use to enhance their capabilities.
+**For Humans:**
+- See `BOOTSTRAP.md` for setup instructions (works with any AI agent)
+- This repository contains structured knowledge, rules, personas, and skills that AI agents can use to enhance their capabilities.
 
 ## What is AI Brain?
 
